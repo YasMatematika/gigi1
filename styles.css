@@ -1,0 +1,187 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #00AEEF;
+}
+.main-image {
+height: 100PX;
+}
+
+.logogigi {
+    width: 30px;
+    height: 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Container utama */
+.container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.container h1 {
+color: #008ECC;
+}
+
+.container img {
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Bagian desain */
+.design-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to right, #00AEEF, #008ECC);
+    color: white;
+}
+
+.design-text {
+    max-width: 500px;
+    text-align: left;
+    margin-right: 30px;
+}
+
+.design-image img {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* WhatsApp floating button */
+.whatsapp-logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: none;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.waImg {
+    width: 50px;
+    height: 50px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-menus {
+    display: flex;
+    gap: 50px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu h4 {
+    margin-bottom: 10px;
+}
+
+.footer-map {
+    width: 300px;
+    height: 200px;
+}
+
+.footer-mark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: white;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .design-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .design-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-menus {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
